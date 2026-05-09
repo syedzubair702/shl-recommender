@@ -31,9 +31,8 @@ app.add_middleware(
 )
 
 # ─── Configuration ─────────────────────────────────────────────────────────────
-#API KEY = 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
 
-ANTHROPIC_API_KEY = "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"
+ANTHROPIC_API_KEY = os.getenv("GROQ_API_KEY")
 CLAUDE_MODEL = "llama-3.3-70b-versatile"
 API_URL = "https://api.groq.com/openai/v1/chat/completions"
 MAX_TOKENS = 1024
